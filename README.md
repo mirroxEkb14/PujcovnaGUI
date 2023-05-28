@@ -1,26 +1,29 @@
-## Postup prací PujcovnaGUI
+## Motivace
+Tento projekt jsem dostal jako semestrální práci v 1. ročníku svého studia na univerzitě. Úkolem bylo navrhnout dobrý objektový program pomocí základních zásad objektově orientovaného přístupu s používaním syntaxe Java.
 
-1. Otevřte projekt v NetBeans a přejmenujte projekt tak, že místo koncovky 
-   _Prijmeni_ vložíte svoje příjmení. 
-    - Jenom přejmenovaný projekt bude hodnocen.
-
-2. Z předchozí úlohy PujcovnaFasada převezměte obsahy všech balíčků.
-
-3. Vytvořte nový balíček ***gui***, do kterého vložíte zrojové soubory, 
-   které budou zajišťovat plnohodnotné grafické uživatelské rozhraní.
-   - Rozhraní konzultujte s vyučujícím na cvičení.
-   - Pro implementaci použijte JavaFX.
-
-4. Pro implementaci tříd s dialogy jednotlivých datových entit využijte 
-   návrhový vzor _bridge_.
-   - Přiložený obrázek s diagramem tříd je pouze vzorem řešení. 
-   - O návrhových vzorech https://moodle.upce.cz/moodle/course/view.php?id=3916   
-
-5. Uložte projekt do repository (commit a push) ve větvi "main".
-
+## Ukázka
 Snímek s příkladem grafického uživatelského rozhraní:
-![GUI ](/src/main/resources/PujcovnaGuiEdit.PNG)
+![GUI](/src/main/resources/GUIpreview.png)
 
-Vzorový diagram tříd aplikace PujcovnaGUI:
-![Diagram tříd ](/src/main/resources/U071overview.png)
+## Cíle
+- Seznámit se s objektově orientovaným přístupem
+- Prohloubit používaní vazeb mezi třídami
+- Rozšířit syntaxi jazyka Java od verze 8 až po verzi 17
+- Používat testování tříd
 
+## Etapy
+- U05 Spojový seznam
+- U06 Jednoduché uživatelské rozhraní z příkazového řádku
+- U07 Vložení adaptační třídy podle návrhového vzoru Fasada
+- U08 Doplnění grafického rozhraní
+
+## Znalost - Technika
+- Objektové typy - odkazové/hodnotové
+- Vytváření objektu - statický/instační konstruktor, klonování
+- Genericita - očišťování, autoboxing, žoliky, omezení
+- Interní datové typy - prohlídky (iterátor), události, dynamické pole, členové třídy
+- Relace mezi třídami - návrh architektury, UML, návrhové vzory (fasáda, adaptér)
+- Serializace - zálohování, lehká perzistence, 3. způsob tvorby objektů
+- Soubory - textové/binární, NV dekorátor
+- Funkcionální rozhraní - lambda, komparátory
+- Stream/Datovody - deklarativní programování
