@@ -1,6 +1,6 @@
 package cz.upce.fei.boop.pujcovna.generator;
 
-import cz.upce.fei.boop.pujcovna.kolekce.SpojovySeznam;
+import cz.upce.fei.boop.pujcovna.kolekce.Seznam;
 
 import java.util.Random;
 
@@ -13,7 +13,7 @@ public interface Gen<E> {
     /**
      * Metoda náhodně generuje data podle počátečné kapacity seznamu.
      */
-    void generuj(SpojovySeznam<E> seznam, int pocet);
+    void generuj(Seznam<E> seznam, int pocet);
 
     /**
      * @return náhodné číslo od 1 včetně do 5 nevčetně.

@@ -3,12 +3,12 @@ package cz.upce.fei.boop.pujcovna.generator;
 import cz.upce.fei.boop.pujcovna.data.model.*;
 import cz.upce.fei.boop.pujcovna.data.vycty.TypMotorky;
 import cz.upce.fei.boop.pujcovna.data.vycty.Znacka;
-import cz.upce.fei.boop.pujcovna.kolekce.SpojovySeznam;
+import cz.upce.fei.boop.pujcovna.kolekce.Seznam;
 
 public final class Generator implements Gen<Motorka> {
 
     @Override
-    public void generuj(SpojovySeznam<Motorka> motorky, int pocet) {
+    public void generuj(Seznam<Motorka> motorky, int pocet) {
         for (int i = 0; i < pocet; i++) {
             final int nahodneCislo = Gen.super.dejNahodneCislo();
             switch (nahodneCislo) {

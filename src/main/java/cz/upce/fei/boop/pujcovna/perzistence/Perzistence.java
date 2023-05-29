@@ -1,5 +1,6 @@
 package cz.upce.fei.boop.pujcovna.perzistence;
 
+import cz.upce.fei.boop.pujcovna.kolekce.Seznam;
 import cz.upce.fei.boop.pujcovna.kolekce.SpojovySeznam;
 
 import java.io.*;
@@ -32,7 +33,7 @@ public final class Perzistence {
      *
      * @throws IOException Vystaví se v procesu uložení dat.
      */
-    public static <T> void ulozBin(SpojovySeznam<T> seznam) throws IOException {
+    public static <T> void ulozBin(Seznam<T> seznam) throws IOException {
         final String cesta = dejCelouCestuBin();
         try (ObjectOutputStream vystup = new ObjectOutputStream(new FileOutputStream(cesta))) {
             Objects.requireNonNull(seznam);
@@ -56,7 +57,7 @@ public final class Perzistence {
      *
      * @throws IOException Vystaví se v procesu čtení dat.
      */
-    public static <T> SpojovySeznam<T> nactiBin(SpojovySeznam<T> seznam) throws IOException {
+    public static <T> Seznam<T> nactiBin(Seznam<T> seznam) throws IOException {
         final String cesta = dejCelouCestuBin();
         try (ObjectInputStream vstup = new ObjectInputStream(new FileInputStream(cesta))) {
             Objects.requireNonNull(seznam);
@@ -81,7 +82,7 @@ public final class Perzistence {
      *
      * @throws IOException Vystaví se v procesu uložení dat.
      */
-    public static <T> void ulozText(SpojovySeznam<T> seznam, String jmenoSouboru) throws IOException {
+    public static <T> void ulozText(Seznam<T> seznam, String jmenoSouboru) throws IOException {
         final String cesta = dejCelouCestuTxt(jmenoSouboru);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(cesta))) {
             final Iterator<T> seznamIterator = seznam.iterator();

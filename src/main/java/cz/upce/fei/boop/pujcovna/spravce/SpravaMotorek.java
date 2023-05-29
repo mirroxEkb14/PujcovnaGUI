@@ -4,6 +4,7 @@ import cz.upce.fei.boop.pujcovna.data.model.*;
 import cz.upce.fei.boop.pujcovna.data.vycty.TypMotorky;
 import cz.upce.fei.boop.pujcovna.data.vycty.Znacka;
 import cz.upce.fei.boop.pujcovna.generator.Generator;
+import cz.upce.fei.boop.pujcovna.kolekce.Seznam;
 import cz.upce.fei.boop.pujcovna.kolekce.SpojovySeznam;
 import cz.upce.fei.boop.pujcovna.perzistence.Perzistence;
 import cz.upce.fei.boop.pujcovna.util.vyjimky.ChybnaHodnotaException;
@@ -31,7 +32,7 @@ public final class SpravaMotorek implements Ovladani {
 
     private static SpravaMotorek instance;
 
-    private SpojovySeznam<Motorka> motorky;
+    private Seznam<Motorka> motorky;
     private int kapacita;
     /**
      * Statický atribut, který reprezentuje aktuální počet {@code Motorek} v seznamu.
